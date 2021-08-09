@@ -1,0 +1,15 @@
+.emon{
+    position:fixed;
+    box-shadow:5px 2px 20px #ddd;
+    width:30%;
+    height:450px;
+    border:none;
+    padding:20px;
+}
+.calendar h3{
+    position:flex;
+}
+.main-calendar{
+    width:35%;
+    height:450px;
+}
