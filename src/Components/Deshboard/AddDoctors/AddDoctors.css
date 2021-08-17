@@ -1,0 +1,23 @@
+.AddDoctors{
+    width:100%;
+    overflow:hidden;
+    justify-content: center;
+}
+.AddDoctors form input{
+    margin: 20px;
+    display: block;
+}
+.formError{
+    text-align: center;
+}
+@media screen and (max-width:1190px){
+    .AddDoctors{
+        width:100%;  
+        justify-content:center;
+    }
+}
+@media screen and (max-width:770px){
+    .AddDoctors form{
+        width:80%;
+    }
+}

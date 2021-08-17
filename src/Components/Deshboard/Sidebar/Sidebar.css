@@ -1,0 +1,38 @@
+.Sidebar{
+    background-image: linear-gradient(#18D2AF,#10CFE0);
+    height:100vh;
+    position:fixed;
+    overflow:hidden;
+}
+.Sidebar li{
+    display: block;
+    margin-top:20px;
+}
+.Sidebar li a{
+    padding-left:10px;
+    text-decoration: none;
+    color:White;
+    font-weight:600;
+    font-size:14px;
+    transition:.3s color;
+}
+.Sidebar li a:hover{
+    color:rgb(165, 156, 156);
+}
+.closeSideBar{
+    font-size:30px;
+    position: absolute;
+    right:10px;
+    top:0px;
+    text-decoration:none;
+    color:black;
+    display:none;
+}
+.MenuBar{
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size:30px;
+    cursor: pointer;
+    display:none;
+}

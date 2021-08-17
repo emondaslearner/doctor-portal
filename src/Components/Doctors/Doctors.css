@@ -1,0 +1,21 @@
+.Doctors{
+    justify-content: center;
+    width:100%;
+    overflow:hidden;
+}
+.Doctors .img img{
+    height:300px;
+}
+@media screen and (max-width: 911px){
+    .Doctors .img{
+        width:40%;
+    }
+}
+@media screen and (max-width: 590px){
+    .Doctors .img{
+        width:80%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+}

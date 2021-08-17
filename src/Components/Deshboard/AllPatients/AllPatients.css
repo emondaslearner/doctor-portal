@@ -1,0 +1,37 @@
+.AllPatients{
+    width:100%;
+    overflow: hidden;
+}
+.AllPatients table{
+    width:77%;
+    text-align: center;
+    padding:20px;
+    margin:20px;
+    box-shadow:2px 2px 10px #ddd,
+                2px 2px 10px #ddd;
+    margin-left:23%;
+}
+.AllPatients .Patients{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+}
+.AllPatients td,th{
+    padding:10px;
+}
+@media screen and (max-width:1190px) {
+    .AllPatients .Patients{
+        width:70%;
+        overflow-x: scroll;
+        margin-left:30%;
+    }
+    .AllPatients table{
+        width:950px;
+    }
+}
+@media screen and (max-width:860px) {
+    .AllPatients .Patients{
+        margin:auto;
+        justify-content: center;
+    }
+}

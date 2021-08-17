@@ -1,0 +1,36 @@
+.Blog{
+    width:100%;
+    overflow: hidden;
+}
+.BlogContent{
+    justify-content: center;
+    margin-top:100px;
+}
+.BlogContent .BlogerInformation{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+.BlogContent .BlogerInformation img{
+    margin-right:15px;
+}
+.BlogerInformation .blogerName{
+    margin-top:10px;
+}
+.BlogContent .firstBlog,.secondBlog,.thirdBlog{
+    box-shadow:2px 2px 10px #ddd;
+    margin:30px;
+    border-radius:3px;
+    padding:30px
+}
+@media screen and (max-width: 911px){
+    .BlogContent .firstBlog,.secondBlog,.thirdBlog{
+        width:40%;
+    }
+}
+@media screen and (max-width: 590px){
+    .BlogContent .firstBlog,.secondBlog,.thirdBlog{
+        width:80%;
+    }
+}
+

@@ -1,0 +1,30 @@
+.section1{
+    width:100%;
+    overflow:hidden;
+    margin:auto;
+}
+.section1 .services{
+    justify-content: center;
+}
+.section1 .services img{
+    width:70px;
+    margin:20px auto;
+    display:block;
+}
+.commonStyleH4{
+    color:#5FC7C7;
+    font-weight:800;
+}
+.section1 .services h4{
+    color:#565E69;
+}
+.commonStylep{
+    color:#C5C5C5;
+    font-size:18px;
+}
+@media screen and (max-width: 740px){
+    .section1 .services p{
+        margin-left:10px;
+        margin-right:10px;
+    }
+}

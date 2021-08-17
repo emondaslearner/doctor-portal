@@ -1,0 +1,82 @@
+.AppointmentByDate{
+    width:100%;
+}
+.CalendarStyle{
+    margin: auto;
+    width:100%;
+    border:none;
+    box-shadow:2px 2px 10px #ddd,
+                2px 2px 10px #ddd;
+}
+.DashboardCalendar{
+    margin-left:16.5%;
+}
+.appointments table{
+    width:100%;
+    margin-top:50px;
+    box-shadow:2px 2px 10px #ddd,
+                2px 2px 10px #ddd;
+}
+.appointments th,td{
+    text-align: center;
+    padding:10px;
+}
+@media screen and (max-width:1190px) {
+    .appointments{
+        width:70%;
+        margin-left:30%;
+    }
+    .DashboardCalendar{
+        width:75%;
+        text-align: center;
+        margin-left:25%;
+    }
+    .CalendarStyle{
+        margin:auto;
+    }
+    .Sidebar{
+        width:25%;
+    }
+}
+@media screen and (max-width:860px) {
+    .Sidebar{
+        width:0px;
+    }
+    .closeSideBar{
+        display:block;
+    }
+    .appointments{
+        margin: auto;
+        width:95%;
+    }
+    .DashboardCalendar{
+        margin:auto;
+    }
+    .MenuBar{
+        display: block;
+    }
+    .ShowMenu{
+        width:50%;
+        animation-name:adds;
+        animation-duration:1s;
+        position: fixed;
+    }
+    @keyframes adds {
+        0%{
+            width:0px;
+        }
+        100%{
+            width:50%;
+        }
+    }
+    
+}
+@media screen and (max-width:628px){
+    .appointments{
+        width:650px;
+        overflow-x:scroll;
+    }
+    .appointments table{
+        width:650px;
+    }
+}

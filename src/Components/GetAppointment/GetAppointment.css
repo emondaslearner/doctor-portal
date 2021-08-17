@@ -1,0 +1,51 @@
+.AppointHeader{
+    justify-content: center;
+    margin-top:100px;
+    width:100%;
+}
+.AppointHeader .Calender{
+    margin-right:50px;
+}
+.AppointHeader .Calender .CalendarStyle{
+    border:none;
+    box-shadow:2px 2px 10px #ddd,
+                2px 2px 10px #ddd;
+}
+.AvailableAppointment{
+    width:80%;
+    margin:50px auto;
+    justify-content: center;
+}
+.close{
+    font-size:25px;
+    position: absolute;
+    top:2px;
+    right:5px;
+    border:none;
+    background:none;
+}
+.appointError{
+    color:red;
+    font-style:italic;
+}
+.physicalInformation{
+    justify-content: center;
+}
+.physicalInformation .gender{
+    height:40px;
+    width:30%;
+    margin-left:2%;
+}
+@media screen and (max-width: 911px) {
+    .AppointHeader .Calender{
+        width:80%;
+        margin-bottom:50px;
+    }
+    .AppointHeader .Calender .CalendarStyle{
+        width:100%;
+    }
+    .AppointHeader .AppointImg{
+        width:80%;
+        margin-bottom:50px;
+    }
+}

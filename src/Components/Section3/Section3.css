@@ -1,0 +1,33 @@
+.Appointment{
+    width:100%;
+    height:400px;
+    margin:0;
+    margin-top:100px;
+    background-color:#42495C;
+    opacity:0.9;
+}
+.AppointmentContent{
+    margin-top:50px;
+}
+.AppointmentContent h1{
+    font-weight:600;
+    color:white;
+}
+.Appointment img{
+    margin-top:-100px;
+    display: block;
+    height:500px;
+}
+@media screen and (max-width: 770px){
+    .Appointment img{
+        display:none;
+    }
+    .Appointment{
+        height:100%;
+    }
+    .AppointmentContent{
+        width:80%;
+        margin: auto;
+        padding:50px 0;
+    }
+}

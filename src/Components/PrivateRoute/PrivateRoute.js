@@ -1,27 +1,25 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
 
-const PrivateRoute = ({ children, ...rest }) => {
-    const getSess = sessionStorage.getItem('user');
+const Privateroute = ({ children, ...rest }) => {
+    const user = JSON.parse(sessionStorage.getItem('user'))
     return (
-        <div>
-            <Route
-                {...rest}
-                render={({ location }) =>
-                    getSess ? (
+        <Route
+            {...rest}
+            render={({ location }) =>
+                user ? (
                     children
-                    ) : (
+                ) : (
                     <Redirect
                         to={{
-                        pathname: "/login",
-                        state: { from: location }
+                            pathname: "/login",
+                            state: { from: location }
                         }}
                     />
-                    )
-                }
-                />
-        </div>
+                )
+            }
+        />
     );
 };
 
-export default PrivateRoute;
+export default Privateroute;

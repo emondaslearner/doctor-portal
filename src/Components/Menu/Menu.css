@@ -1,0 +1,83 @@
+
+.Menu{
+    display:flex;
+    justify-content:flex-end;
+}
+.Menu ul{
+    display:block;
+    margin-right:50px;
+    margin-top:40px;
+}
+.toggle{
+    display:none;
+}
+.Menu ul a{
+    display:inline-block;
+    padding:0 20px;
+    text-decoration:none;
+    color:#727272;
+    font-weight:600;
+    transition:0.3s color;
+}
+.Menu ul a:hover{
+    color:#c2bcbc;
+}
+@media screen and (max-width: 740px) {
+    .toggle{
+        display: flex !important;
+        width:100%;
+        background-color:#525a6d;
+    }
+    .toggle h3{
+        font-size:20px;
+        margin:10px;
+        margin-left:20px;
+        color:white;
+    }
+    .toggle a{
+        font-size:26px;
+        color:#3A4256;
+        display: block;
+        position:absolute;
+        top:5px;
+        right:10px;
+        color:white;
+    }
+    .Menu{
+        flex-direction:column;
+    }
+    .Menu ul{
+        width:100%;
+        margin:0;
+        padding:0;
+        background-color:#3A4256;
+        opacity:0;
+        animation-duration:1s;
+        display:none;
+    }
+    .animation{
+        animation-name:fadeInFromNone;
+    }
+    .hide{
+        animation-name:hideFromBlock;
+    }
+    .Menu ul a{
+        display: block !important;
+        text-align:center;
+        padding:10px;
+        border-bottom:1px solid #ddd;
+        transition:0.3s color;
+    }
+    .Menu ul a:hover{
+        background-color: #4b515f;
+        color:#a8a3a3;
+    }
+}
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,28 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-body{
-    font-family: 'Roboto Mono', monospace;
+.Header{
+    height:100vh;
+    width:100%;
+    overflow:hidden;
 }
-.header .nav{
+.HeaderContent{
+    justify-content:center;
+    margin-top:100px;
+}
+.HeaderContent .right{
     display:flex;
+    flex-direction:column;
     justify-content:flex-end;
-    margin-right:125px;
+    margin-left:15%;
 }
-.header .nav a{
-    color:#3A4256;
-    text-decoration:none;
-    margin:0 30px;
-    font-weight:500;
+.HeaderContent .left h1{
+    color:#203047;
+    font-weight:bold;
+}
+.HeaderContent .left p{
+    color:#C5C5C5;
+    margin:10px;
+}
+.CommonButton{
+    border-radius:0;
+    font-weight:800;
     margin-top:20px;
-    border-bottom:2px solid white;
-    transition:.5s border;
+    padding:10px 20px;
+    background-image:linear-gradient(90deg,#18D3B2,#0FCFEA);
+    border:none;
 }
-.header .nav a:hover{
-    border-bottom:2px solid #3A4256;
+@media screen  and (min-width: 740px) and (max-width: 950px) {
+    .HeaderContent{
+        display:flex;
+        margin:0;
+        padding:0;
+        margin-top:50px;
+    }
+    .HeaderContent .right{
+        width:50%;
+        margin:0;
+        padding:0;
+    }
+    .left{
+        width:35%;
+        margin:0;
+        padding:0;
+    }
+
 }
-.header .nav .white{
-    color:white;
-    border-bottom:2px solid #3A4256;
-}
-.header .nav .white:hover{
-    border-bottom:2px solid white;
+@media screen and (max-width: 740px){
+    .Header{
+        height:100%;
+    }
+    .HeaderContent{
+        margin:0;
+        padding:0;
+    }
+    .left{
+        margin:auto;
+        width:80%;
+    }
+    .right{
+        padding:0;
+        margin: 30px 100px;
+        width:80%;
+    }
 }

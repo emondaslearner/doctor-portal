@@ -1,0 +1,11 @@
+.Appoint p{
+    font-size:13px;
+}
+.Appoint{
+    overflow: hidden;
+    margin:20px;
+    width:28%;
+    padding:30px;
+    box-shadow:2px 2px 10px #ddd,
+                2px 2px 10px #ddd;
+}

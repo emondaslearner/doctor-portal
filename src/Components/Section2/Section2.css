@@ -1,0 +1,23 @@
+.section2{
+    width:100%;
+    overflow: hidden;
+    justify-content: center;
+}
+.section2 .dentalContent{
+    margin-left:50px;
+}
+.section2 .dentalContent h1{
+    color:#203047;
+    font-weight:600;
+}
+.section2 .dentalContent p{
+    line-height:30px;
+}
+@media screen and (max-width: 740px){
+    .section2 .dentalContent{
+        width:90%;
+    }
+    .section2 img{
+        width:90%;
+    }
+}
